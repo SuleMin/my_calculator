@@ -11,6 +11,19 @@
         var num = document.getElementById("n1");  
         num.value = Math.pow(num.value, 2); 
         }
+
+    function inverso(){ 
+		var nInv=0;
+		var residuo=0;
+		num=parseInt(prompt("n1"));
+		while(num>0)
+		{
+			residuo=num%10;
+			nInv= nInv*10+residuo;
+			num=parseInt(num/10);
+		};
+        alert(nInv+ " es el número invertido");
+        }
         </script> 
         </head> 
         <body>  
@@ -21,6 +34,8 @@
                 <button onclick="cube()"> x^3 
                 </button>  
                 <button onclick="cube()"> x^2
+                </button>
+                <button onclick="inverso()"> 1/x
                 </button>
             </p> 
         </body> 
